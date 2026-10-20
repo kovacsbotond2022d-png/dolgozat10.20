@@ -17,3 +17,7 @@ app.get("/api/termekek", async (req, res) => {
         res.status(500).json({ hiba: "hiba tortent" });
     }
 });
+
+app.listen(port, () => {
+    console.log(`A szerver fut a http://localhost:${port} cimen`);
+});
